@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Las Cookie - Home</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 0; padding: 0; background: #fff8f0; }
+        header { background: #d2691e; color: #fff; padding: 20px 0; text-align: center; }
+        nav { background: #f4e2d8; padding: 10px; text-align: center; }
+        nav a { margin: 0 15px; color: #d2691e; text-decoration: none; font-weight: bold; }
+        section { max-width: 900px; margin: 30px auto; background: #fff; padding: 30px; border-radius: 8px; box-shadow: 0 2px 8px #e0c9b6; }
+        h2 { color: #d2691e; }
+        .locations, .recipes { margin-top: 30px; }
+        .location-list { list-style: none; padding: 0; }
+        .location-list li { margin-bottom: 10px; }
+        .recipe-cards {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 24px;
+            justify-content: center;
+            margin-top: 24px;
+        }
+        .recipe-card {
+            background: #fffdfb;
+            border-radius: 10px;
+            box-shadow: 0 2px 8px #e0c9b6;
+            width: 260px;
+            padding: 18px 16px 16px 16px;
+            margin-bottom: 10px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            transition: transform 0.15s;
+        }
+        .recipe-card:hover {
+            transform: translateY(-6px) scale(1.03);
+            box-shadow: 0 6px 18px #e0c9b6;
+        }
+        .recipe-card img {
+            width: 90px;
+            height: 90px;
+            object-fit: contain;
+            margin-bottom: 10px;
+        }
+        .recipe-card h3 {
+            margin: 0 0 8px 0;
+            color: #a0522d;
+            font-size: 1.15em;
+            text-align: center;
+        }
+        .price { color: #388e3c; font-weight: bold; }
+        .ingredients {
+            margin: 8px 0 0 0;
+            padding-left: 18px;
+            text-align: left;
+        }
+        @media (max-width: 700px) {
+            .recipe-cards { flex-direction: column; align-items: center; }
+            .recipe-card { width: 95%; }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="cookie_cat.png" alt="Las Cookie Logo" style="width:80px;height:auto;display:block;margin:0 auto 10px auto;" />
+        <h1>Las Cookie</h1>
+        <p>Your favorite destination for delicious cookies!</p>
+    </header>
+    <nav>
+        <a href="#about">About Us</a>
+        <a href="#locations">Factory Outlets</a>
+        <a href="#recipes">Cookie Recipes</a>
+    </nav>
+    <section id="about">
+        <h2>About Las Cookie</h2>
+        <p>
+            Las Cookie is a family-owned bakery specializing in handcrafted cookies made with the finest ingredients. 
+            Since 1995, we have been delighting customers with our unique flavors and warm, freshly baked treats. 
+            Our mission is to spread happiness, one cookie at a time!
+        </p>
+    </section>
+    <section id="locations" class="locations">
+    <section class="magic-process" style="margin-top:30px;">
+        <h2>3 Magic Steps to Get Your Magic Cookie</h2>
+        <ol style="font-size:1.1em;max-width:600px;margin:0 auto 20px auto;padding-left:1.2em;">
+            <li><strong>Choose Your Favorite:</strong> Browse our delicious cookie cards and pick your favorite flavor.</li>
+            <li><strong>Place Your Order:</strong> Visit our outlet or call us to place your order for fresh, handcrafted cookies.</li>
+            <li><strong>Enjoy the Magic:</strong> Savor the taste and share the happiness with friends and family!</li>
+        </ol>
+    </section>
+        <h2>Factory Outlet Locations</h2>
+        <ul class="location-list">
+            <li><strong>Hyderabad Central:</strong> 12 Banjara Hills Road, Hyderabad</li>
+            <li><strong>Bangalore Indiranagar:</strong> 88 100 Feet Road, Indiranagar, Bengaluru</li>
+            <li><strong>Mumbai Andheri:</strong> 45 SV Road, Andheri West, Mumbai</li>
+            <li><strong>Chennai T Nagar:</strong> 27 North Usman Road, T Nagar, Chennai</li>
+        </ul>
+    </section>
+    <section id="recipes" class="recipes">
+        <h2>Our Cookie Recipes</h2>
+        <div class="recipe-cards">
+            <div class="recipe-card">
+                <img src="cookie_cat.png" alt="Classic Chocolate Chip" />
+                <h3>Classic Chocolate Chip <span class="price">₹120</span></h3>
+                <ul class="ingredients">
+                    <li>Flour</li>
+                    <li>Butter</li>
+                    <li>Sugar</li>
+                    <li>Brown Sugar</li>
+                    <li>Eggs</li>
+                    <li>Vanilla Extract</li>
+                    <li>Chocolate Chips</li>
+                    <li>Baking Soda</li>
+                    <li>Salt</li>
+                </ul>
+            </div>
+            <div class="recipe-card">
+                <img src="cookie_cat.png" alt="Oatmeal Raisin" />
+                <h3>Oatmeal Raisin <span class="price">₹130</span></h3>
+                <ul class="ingredients">
+                    <li>Oats</li>
+                    <li>Flour</li>
+                    <li>Butter</li>
+                    <li>Brown Sugar</li>
+                    <li>Eggs</li>
+                    <li>Raisins</li>
+                    <li>Cinnamon</li>
+                    <li>Baking Soda</li>
+                    <li>Salt</li>
+                </ul>
+            </div>
+            <div class="recipe-card">
+                <img src="cookie_cat.png" alt="Double Chocolate" />
+                <h3>Double Chocolate <span class="price">₹140</span></h3>
+                <ul class="ingredients">
+                    <li>Flour</li>
+                    <li>Cocoa Powder</li>
+                    <li>Butter</li>
+                    <li>Sugar</li>
+                    <li>Eggs</li>
+                    <li>Chocolate Chips</li>
+                    <li>Vanilla Extract</li>
+                    <li>Baking Powder</li>
+                    <li>Salt</li>
+                </ul>
+            </div>
+            <div class="recipe-card">
+                <img src="cookie_cat.png" alt="Peanut Butter" />
+                <h3>Peanut Butter <span class="price">₹135</span></h3>
+                <ul class="ingredients">
+                    <li>Flour</li>
+                    <li>Peanut Butter</li>
+                    <li>Butter</li>
+                    <li>Sugar</li>
+                    <li>Eggs</li>
+                    <li>Baking Soda</li>
+                    <li>Salt</li>
+                </ul>
+            </div>
+            <div class="recipe-card">
+                <img src="cookie_cat.png" alt="White Chocolate Macadamia" />
+                <h3>White Chocolate Macadamia <span class="price">₹150</span></h3>
+                <ul class="ingredients">
+                    <li>Flour</li>
+                    <li>Butter</li>
+                    <li>Sugar</li>
+                    <li>Eggs</li>
+                    <li>White Chocolate Chips</li>
+                    <li>Macadamia Nuts</li>
+                    <li>Vanilla Extract</li>
+                    <li>Baking Soda</li>
+                    <li>Salt</li>
+                </ul>
+            </div>
+            <div class="recipe-card">
+                <img src="cookie_cat.png" alt="Snickerdoodle" />
+                <h3>Snickerdoodle <span class="price">₹110</span></h3>
+                <ul class="ingredients">
+                    <li>Flour</li>
+                    <li>Butter</li>
+                    <li>Sugar</li>
+                    <li>Eggs</li>
+                    <li>Cream of Tartar</li>
+                    <li>Baking Soda</li>
+                    <li>Cinnamon</li>
+                    <li>Salt</li>
+                </ul>
+            </div>
+            <div class="recipe-card">
+                <img src="cookie_cat.png" alt="Almond Biscotti" />
+                <h3>Almond Biscotti <span class="price">₹145</span></h3>
+                <ul class="ingredients">
+                    <li>Flour</li>
+                    <li>Almonds</li>
+                    <li>Butter</li>
+                    <li>Sugar</li>
+                    <li>Eggs</li>
+                    <li>Baking Powder</li>
+                    <li>Vanilla Extract</li>
+                    <li>Salt</li>
+                </ul>
+            </div>
+            <div class="recipe-card">
+                <img src="cookie_cat.png" alt="Coconut Crunch" />
+                <h3>Coconut Crunch <span class="price">₹125</span></h3>
+                <ul class="ingredients">
+                    <li>Flour</li>
+                    <li>Butter</li>
+                    <li>Sugar</li>
+                    <li>Eggs</li>
+                    <li>Desiccated Coconut</li>
+                    <li>Vanilla Extract</li>
+                    <li>Baking Powder</li>
+                    <li>Salt</li>
+                </ul>
+            </div>
+            <div class="recipe-card">
+                <img src="cookie_cat.png" alt="Red Velvet" />
+                <h3>Red Velvet <span class="price">₹155</span></h3>
+                <ul class="ingredients">
+                    <li>Flour</li>
+                    <li>Cocoa Powder</li>
+                    <li>Butter</li>
+                    <li>Sugar</li>
+                    <li>Eggs</li>
+                    <li>Red Food Coloring</li>
+                    <li>Vanilla Extract</li>
+                    <li>Baking Soda</li>
+                    <li>Salt</li>
+                </ul>
+            </div>
+            <div class="recipe-card">
+                <img src="cookie_cat.png" alt="Lemon Zest" />
+                <h3>Lemon Zest <span class="price">₹115</span></h3>
+                <ul class="ingredients">
+                    <li>Flour</li>
+                    <li>Butter</li>
+                    <li>Sugar</li>
+                    <li>Eggs</li>
+                    <li>Lemon Zest</li>
+                    <li>Lemon Juice</li>
+                    <li>Baking Powder</li>
+                    <li>Salt</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    <footer style="background:#d2691e;color:#fff;text-align:center;padding:16px 0;margin-top:30px;font-size:1.05em;">
+        &copy; 2025 Las Cookie. All rights reserved.
+    </footer>
+</body>
+</html>
